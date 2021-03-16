@@ -1,0 +1,529 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.eot");
+  src: url("../fonts/Poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fonts/FjallaOne/FjallaOne-Regular.eot");
+  src: url("../fonts/FjallaOne/FjallaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FjallaOne/FjallaOne-Regular.woff2") format("woff2"), url("../fonts/FjallaOne/FjallaOne-Regular.woff") format("woff"), url("../fonts/FjallaOne/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  font-family: "Poppins";
+  color: #4e6371;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-post__author-avatar, .blog-post__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-red {
+  color: #D6110B;
+}
+
+.content-clickable {
+  position: relative;
+  cursor: pointer;
+}
+
+.header {
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
+}
+.header__content {
+  position: relative;
+  z-index: 2;
+}
+.header__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Fjalla One";
+  margin-top: 150px;
+}
+.header__overlay, .footer__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+  background-color: #000;
+  z-index: 1;
+}
+.header__icon {
+  width: 16px;
+}
+
+.menu__list {
+  display: flex;
+}
+@media (max-width: 991px) {
+  .menu__list {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+    top: 90px;
+  }
+  .menu__list.open .menu__link {
+    padding: 12px 15px;
+    visibility: visible;
+  }
+}
+.menu__logo-img {
+  max-width: 100%;
+}
+.menu__sub-toggler {
+  cursor: pointer;
+}
+.menu__item {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .menu__item.open .menu__submenu {
+    max-height: 1500px;
+  }
+}
+.menu__item.open .menu__sub-open-btn, .menu__item.open .menu__sub-close-btn {
+  display: none;
+}
+.menu__item.open .menu__sub-close-btn {
+  display: block;
+}
+.menu__item.active .menu__link {
+  color: #D6110B;
+}
+.menu__item:hover .menu__submenu {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.menu__submenu {
+  transition: all 0.2s linear;
+}
+@media (max-width: 991px) {
+  .menu__submenu {
+    max-height: 0;
+  }
+}
+@media (min-width: 992px) {
+  .menu__submenu {
+    min-width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 10px);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.menu__submenu-link {
+  color: #000;
+  display: block;
+  font-size: 12px;
+  padding: 10px 20px;
+  background: #ffffff;
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  transition: all 0.5s ease-out;
+}
+.menu__submenu-link:hover {
+  color: #D6110B;
+  border-left: 5px solid #D6110B;
+  background: #F2F2F2;
+}
+.menu__sub-open-btn, .menu__sub-close-btn {
+  fill: #D6110B;
+  max-width: 15px;
+  height: unset;
+  display: none;
+}
+@media (max-width: 991px) {
+  .menu__sub-open-btn, .menu__sub-close-btn {
+    display: inline-flex;
+  }
+}
+.menu__sub-close-btn {
+  display: none;
+}
+.menu__link {
+  color: #ffffff;
+  font-family: "Fjalla One";
+  transition: all 0.2s linear;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 35px 12px;
+  display: inline-flex;
+}
+.menu__link:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  background-color: #D6110B;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 0;
+  transition: all 0.5s ease-out;
+}
+@media (min-width: 992px) {
+  .menu__link:hover {
+    color: #D6110B;
+  }
+  .menu__link:hover:before {
+    height: 30%;
+  }
+}
+@media (max-width: 991px) {
+  .menu__link {
+    color: #000 !important;
+    background: #ffffff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    visibility: hidden;
+  }
+  .menu__link:hover {
+    color: #D6110B !important;
+    background-color: #f0f0f0;
+  }
+}
+@media (max-width: 991px) {
+  .menu {
+    position: relative;
+  }
+}
+
+.header-breadcrumb__item:not(:last-child) {
+  margin-right: 12px;
+}
+.header-breadcrumb__item:not(:last-child):after {
+  content: "";
+  background-image: url("../img/icons/icon-right-arrow.svg");
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.header-breadcrumb__item:last-child {
+  pointer-events: none;
+}
+.header-breadcrumb__link {
+  font-size: 12px;
+  color: #ffffff;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+.header-breadcrumb__link:hover {
+  color: #D6110B;
+}
+
+.close-icon {
+  display: none;
+}
+
+.menu-toggler {
+  cursor: pointer;
+}
+.menu-toggler__line {
+  width: 20px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+}
+.menu-toggler__line_2 {
+  margin-top: 5px;
+}
+.menu-toggler__line_3 {
+  margin-top: 5px;
+}
+
+.share-block.active .share-block__item {
+  visibility: visible;
+  height: 40px;
+}
+.share-block.active .close-icon {
+  display: block !important;
+}
+.share-block.active .header__icon {
+  display: none;
+}
+.share-block__content, .search-block__content {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+.share-block__item {
+  background-color: #efefef;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+  height: 0;
+  visibility: hidden;
+}
+.share-block__item:hover .share-block__icon {
+  fill: #ffffff;
+}
+.share-block__item_facebook:hover {
+  background: #3b5998;
+}
+.share-block__item_google:hover {
+  background: #dd4b39;
+}
+.share-block__item_instagram:hover {
+  background: #517fa4;
+}
+.share-block__item_tumblr:hover {
+  background: #32506d;
+}
+.share-block__item_twitter:hover {
+  background: #00aced;
+}
+.share-block__item_youtube:hover {
+  background: #bb0000;
+}
+.share-block__icon {
+  transition: all 0.2s linear;
+  max-width: 15px;
+  fill: #000;
+}
+
+.search-block.active .close-icon {
+  display: block !important;
+}
+.search-block.active .header__icon {
+  display: none;
+}
+.search-block.active .search-block__input {
+  height: 40px;
+  padding: 9px 12px 9px 10px;
+  border: 1px solid #ddd;
+}
+.search-block__input {
+  transition: all 0.2s linear;
+  width: 200px;
+  font-size: 13px;
+  line-height: 20px;
+  outline: none;
+  height: 0;
+  padding: 0;
+  border: none;
+}
+
+.blog-post {
+  position: relative;
+  z-index: 0;
+}
+.blog-post:not(:first-child) {
+  margin-top: 25px;
+}
+.blog-post__image-wrapper {
+  padding-top: 45%;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.blog-post__image-wrapper:hover .blog-post__image {
+  transform: scale(1.6);
+}
+.blog-post__category {
+  position: absolute;
+  color: #ffffff;
+  background-color: #D6110B;
+  left: 30px;
+  bottom: 60px;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 2px 8px;
+  z-index: 9;
+}
+.blog-post__author {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -37px;
+  margin-left: 30px;
+  z-index: 9;
+  position: relative;
+}
+.blog-post__image {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  transition: 1.5s ease;
+}
+.blog-post__author-name {
+  color: #D6110B;
+}
+.blog-post__title {
+  color: #232e35;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.blog-post__open-btn {
+  color: #D6110B;
+  font-family: "Fjalla One";
+  text-transform: uppercase;
+  position: relative;
+}
+.blog-post__open-btn:hover {
+  color: #232e35;
+}
+.blog-post__open-btn:hover .blog-post__right-arrow {
+  color: #232e35;
+  left: calc(100% + 10px);
+  opacity: 1;
+}
+.blog-post__right-arrow {
+  opacity: 0;
+  width: 15px;
+  position: absolute;
+  left: 0;
+  color: #D6110B;
+  transition: all 0.2s linear;
+}
+
+.blogs-pagination__item:not(:last-child) .blogs-pagination__link {
+  border-right: none !important;
+}
+.blogs-pagination__link {
+  min-width: 33px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  color: #767676;
+  transition: all 0.2s linear;
+  font-weight: 500;
+}
+.blogs-pagination__link:hover {
+  background-color: #D6110B;
+  color: #ffffff;
+}
+.blogs-pagination__link_arrow {
+  font-family: "Fjalla One";
+  font-size: 15px;
+}
+
+.footer {
+  background-image: url("../img/bg1.jpg");
+  position: relative;
+  color: #999999;
+}
+.footer__content {
+  position: relative;
+  z-index: 9;
+}
+.footer__overlay {
+  background-color: #232e35;
+  opacity: 0.9;
+}
+.footer__col-header {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer__col-item {
+  margin-bottom: 20px;
+}
+.footer__link {
+  color: #999999;
+  transition: all 0.2s linear;
+}
+.footer__link:hover {
+  color: #D6110B;
+}
+.footer__subscribe-input {
+  padding: 13px;
+  border-radius: 0;
+  border: 1px solid #eee;
+  height: 53px;
+  margin-right: 0;
+  outline: none;
+}
+.footer__copyright {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer__subscribe-btn {
+  background: #D6110B;
+  color: rgba(0, 0, 0, 0) !important;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border: none;
+  height: 53px;
+  margin-left: -5px;
+  font-family: "Fjalla One";
+  text-shadow: 0 0 0 #ffffff, 200px 0 0 #ffffff;
+  overflow: hidden;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.footer__subscribe-btn:hover {
+  text-shadow: -200px 0 0 #ffffff, 0 0 0 #ffffff;
+}
+.footer__cols {
+  border-bottom: 1px solid #424242;
+}
+.footer__social-icon {
+  transition: all 0.2s linear;
+  fill: #ffffff;
+  max-width: 12px;
+}
+.footer__social-item {
+  display: inline-flex;
+  width: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-item:not(:first-child) {
+  margin-left: 8px;
+}
+.footer__social-item:hover .footer__social-icon {
+  fill: #D6110B;
+}
+
+/*# sourceMappingURL=index.css.map */
