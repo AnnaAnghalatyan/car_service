@@ -56,6 +56,12 @@ ul {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
 .header {
   position: relative;
   color: #ffffff;
@@ -72,6 +78,7 @@ ul {
   z-index: 2;
   background-image: url("../img/bg1.jpg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 .header__title {
@@ -85,7 +92,7 @@ ul {
     padding-top: 150px;
   }
 }
-.header__overlay, .footer__overlay, .menu__overlay {
+.header__overlay, .contact__overlay, .footer__overlay, .menu__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -108,6 +115,11 @@ ul {
   align-items: center;
   justify-content: space-between;
   font-size: 95px;
+}
+@media (max-width: 767px) {
+  .header__carousel .owl-nav {
+    font-size: 30px;
+  }
 }
 .header__carousel .owl-nav button:hover {
   background: transparent !important;
@@ -696,6 +708,9 @@ ul {
 .about {
   background: #f6f7f8;
 }
+.about__icon img {
+  width: 30px;
+}
 .about__item {
   background: #ffffff;
   padding: 20px;
@@ -716,6 +731,9 @@ ul {
 .services {
   background: #f6f7f8;
   position: relative;
+}
+.services__icon img {
+  width: 30px;
 }
 .services__content {
   position: relative;
@@ -767,14 +785,60 @@ ul {
   color: #ffffff;
   background: #232e35;
 }
+.services__item.active:after {
+  display: block;
+}
 .services__thumbnail-image {
   max-width: 100%;
+}
+
+.contact {
+  background: url("../img/bg-5.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffffff;
+}
+.contact__car {
+  max-width: 290px;
+}
+@media (max-width: 767px) {
+  .contact__car {
+    max-width: 150px;
+  }
+}
+@media (max-width: 575px) {
+  .contact__car {
+    max-width: 100px;
+  }
+}
+.contact__cars {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  bottom: -65px;
+}
+@media (max-width: 767px) {
+  .contact__cars {
+    bottom: -30px;
+  }
+}
+.contact__caption {
+  max-width: 400px;
+  margin: auto;
+}
+.contact__content {
+  position: relative;
+  z-index: 8;
 }
 
 .reasons {
   position: relative;
   background-image: url("../img/bg-4.jpg");
   background-size: cover;
+}
+.reasons__icon img {
+  width: 30px;
 }
 .reasons__img-item {
   max-width: 100%;
@@ -863,6 +927,11 @@ ul {
   font-size: 60px;
   font-family: "Fjalla One";
 }
+@media (max-width: 767px) {
+  .offer__percent {
+    font-size: 40px;
+  }
+}
 .offer__overlay {
   position: absolute;
   right: 0;
@@ -929,6 +998,11 @@ ul {
 .news__thumbnail {
   width: 70%;
   height: 300px;
+}
+@media (max-width: 575px) {
+  .news__thumbnail {
+    width: 90%;
+  }
 }
 .news__details {
   padding: 30px;

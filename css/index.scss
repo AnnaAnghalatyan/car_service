@@ -44,6 +44,12 @@ ul {
   cursor: pointer;
 }
 
+h2 {
+  @include media.md-less {
+    font-size: 25px;
+  }
+}
+
 .header {
   //background-position: center;
   position: relative;
@@ -63,6 +69,7 @@ ul {
     z-index: 2;
     background-image: url("../img/bg1.jpg");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }
 
@@ -103,6 +110,10 @@ ul {
       align-items: center;
       justify-content: space-between;
       font-size: 95px;
+
+      @include media.md-less {
+        font-size: 30px;
+      }
 
       button {
         &:hover {
@@ -862,6 +873,12 @@ ul {
 .about {
   background: variables.$bg_light;
 
+  &__icon {
+    img {
+      width: 30px;
+    }
+  }
+
   &__item {
     background: variables.$white;
     padding: 20px;
@@ -886,6 +903,12 @@ ul {
 .services {
   background: variables.$bg_light;
   position: relative;
+
+  &__icon {
+    img {
+      width: 30px;
+    }
+  }
 
   &__content {
     position: relative;
@@ -937,6 +960,10 @@ ul {
     &.active {
       color: variables.$white;
       background: variables.$dark;
+
+      &:after {
+        display: block;
+      }
     }
   }
 
@@ -949,10 +976,61 @@ ul {
   }
 }
 
+.contact {
+  background: url("../img/bg-5.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: variables.$white;
+
+  &__car {
+    max-width: 290px;
+
+    @include media.md-less {
+      max-width: 150px;
+    }
+
+    @include media.sm-less {
+      max-width: 100px;
+    }
+  }
+
+  &__cars {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    bottom: -65px;
+
+    @include media.md-less {
+      bottom: -30px;
+    }
+  }
+
+  &__caption {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  &__overlay {
+    @extend .header__overlay
+  }
+
+  &__content {
+    position: relative;
+    z-index: 8;
+  }
+}
+
 .reasons {
   position: relative;
   background-image: url("../img/bg-4.jpg");
   background-size: cover;
+
+  &__icon {
+    img {
+      width: 30px;
+    }
+  }
 
   &__img-item {
     max-width: 100%;
@@ -1049,6 +1127,10 @@ ul {
   &__percent {
     font-size: 60px;
     font-family: variables.$font_family2;
+
+    @include media.md-less {
+      font-size: 40px;
+    }
   }
 
   &__overlay {
@@ -1124,6 +1206,10 @@ ul {
   &__thumbnail {
     width: 70%;
     height: 300px;
+
+    @include media.sm-less {
+      width: 90%;
+    }
   }
 
   &__thumbnail-img {
