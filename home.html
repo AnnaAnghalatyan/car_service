@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Car Service</title>
+</head>
+<body>
+
+<header class="header header_home">
+    <nav class="menu pt-lg-0 pt-3 pb-lg-0 pb-3">
+        <div class="menu__overlay"></div>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="/" class="menu__logo">
+                <img class="menu__logo-img" src="img/logo-dark.png" alt="logo">
+            </a>
+            <div class="d-flex align-items-center">
+                <ul class="menu__list">
+                    <li class="menu__item active">
+                        <a class="menu__link">
+                            Home
+                            <img class="menu__toggler-mobile" src="img/icons/icon-close-dark.svg" alt="menu-toggler">
+
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Pages
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+                <div class="share-block content-clickable ml-3">
+                    <img class="header__icon" src="img/icons/icon-share.svg" alt="share via social">
+                    <img class="close-icon header__icon" src="img/icons/icon-close.svg">
+                    <div class="share-block__content d-flex">
+                        <a href="" class="share-block__item share-block__item_facebook">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                 viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="share-block__item share-block__item_google">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 viewBox="0 0 24 24"><title>Google
+                                icon</title>
+                                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="share-block__item share-block__item_instagram">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 viewBox="0 0 24 24"><title>Instagram
+                                icon</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="share-block__item share-block__item_tumblr">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 viewBox="0 0 24 24"><title>Tumblr icon</title>
+                                <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="share-block__item share-block__item_twitter">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 viewBox="0 0 24 24"><title>Twitter icon</title>
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="share-block__item share-block__item_youtube">
+                            <svg class="share-block__icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 viewBox="0 0 24 24" style="&#10;"><title>YouTube icon</title>
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="search-block content-clickable ml-4">
+                    <img class="header__icon" src="img/icons/search.svg" alt="search">
+                    <img class="close-icon header__icon" src="img/icons/icon-close.svg">
+                    <div class="search-block__content">
+                        <form action="" class="search-block__form">
+                            <input type="text" placeholder="Search..." class="search-block__input">
+                        </form>
+                    </div>
+                </div>
+                <div class="menu-toggler d-lg-none d-block ml-3">
+                    <span class="menu-toggler__line menu-toggler__line_1"></span>
+                    <span class="menu-toggler__line menu-toggler__line_2"></span>
+                    <span class="menu-toggler__line menu-toggler__line_3"></span>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="header__carousel owl-carousel owl-theme">
+        <div style="background-image: url('img/thum3.jpg')" class="header__content pb-4 pt-lg-0 pt-3">
+            <div class="header__overlay"></div>
+            <div class="container header__main">
+                <h2 class="header__title">
+                    blog listing
+                </h2>
+                <p class="header__caption mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem earum eligendi minima numquam
+                    omnis quam reiciendis, rem repellendus sequi similique sint? Aperiam atque corporis dolore id, ipsum
+                    maiores nam, optio pariatur sequi sint voluptatem, voluptatibus? Dolores nihil sapiente soluta?
+                </p>
+                <button class="footer__subscribe-btn footer__subscribe-btn_small">read more</button>
+
+
+            </div>
+        </div>
+        <div style="background-image: url('img/thum2.jpg')" class="header__content pb-4 pt-lg-0 pt-3">
+            <div class="header__overlay"></div>
+            <div class="container header__main">
+                <h2 class="header__title">
+                    blog listing
+                </h2>
+                <p class="header__caption mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem earum eligendi minima numquam
+                    omnis quam reiciendis, rem repellendus sequi similique sint? Aperiam atque corporis dolore id, ipsum
+                    maiores nam, optio pariatur sequi sint voluptatem, voluptatibus? Dolores nihil sapiente soluta?
+                </p>
+                <button class="footer__subscribe-btn footer__subscribe-btn_small">read more</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</header>
+<section class="characteristics">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mt-2 col-md-6 col-12">
+                <div class="characteristic">
+                    <div class="characteristic__thumbnail">
+                        <img src="img/thum1.jpg" alt="thumbnail" class="characteristic__img">
+                    </div>
+                    <div class="characteristic__hover">
+                        <div class="characteristic__icon">
+                            icon
+                        </div>
+                        <div class="characteristic__title">
+                            <h5>
+                                oil
+                            </h5>
+                            <h2>
+                                change
+                            </h2>
+                        </div>
+                        <div class="characteristic__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem est molestiae nemo sit
+                            suscipit?
+                        </div>
+                        <a href=""
+                           class="d-inline-flex align-items-center blog-post__open-btn characteristic__more mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2 col-md-6 col-12">
+                <div class="characteristic">
+                    <div class="characteristic__thumbnail">
+                        <img src="img/thum1.jpg" alt="thumbnail" class="characteristic__img">
+                    </div>
+                    <div class="characteristic__hover">
+                        <div class="characteristic__icon">
+                            icon
+                        </div>
+                        <div class="characteristic__title">
+                            <h5>
+                                oil
+                            </h5>
+                            <h2>
+                                change
+                            </h2>
+                        </div>
+                        <div class="characteristic__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem est molestiae nemo sit
+                            suscipit?
+                        </div>
+                        <a href=""
+                           class="d-inline-flex align-items-center blog-post__open-btn characteristic__more mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2 col-md-6 col-12">
+                <div class="characteristic">
+                    <div class="characteristic__thumbnail">
+                        <img src="img/thum1.jpg" alt="thumbnail" class="characteristic__img">
+                    </div>
+                    <div class="characteristic__hover">
+                        <div class="characteristic__icon">
+                            icon
+                        </div>
+                        <div class="characteristic__title">
+                            <h5>
+                                oil
+                            </h5>
+                            <h2>
+                                change
+                            </h2>
+                        </div>
+                        <div class="characteristic__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem est molestiae nemo sit
+                            suscipit?
+                        </div>
+                        <a href=""
+                           class="d-inline-flex align-items-center blog-post__open-btn characteristic__more mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-2 col-md-6 col-12">
+                <div class="characteristic">
+                    <div class="characteristic__thumbnail">
+                        <img src="img/thum1.jpg" alt="thumbnail" class="characteristic__img">
+                    </div>
+                    <div class="characteristic__hover">
+                        <div class="characteristic__icon">
+                            icon
+                        </div>
+                        <div class="characteristic__title">
+                            <h5>
+                                oil
+                            </h5>
+                            <h2>
+                                change
+                            </h2>
+                        </div>
+                        <div class="characteristic__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem est molestiae nemo sit
+                            suscipit?
+                        </div>
+                        <a href=""
+                           class="d-inline-flex align-items-center blog-post__open-btn characteristic__more mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about pt-5 pb-5">
+    <div class="container">
+        <h5 class="text-center"><span class="text-red text-uppercase">about company</span></h5>
+        <h2 class="text-uppercase text-center">
+            WE'RE A COMPANY OF TALENTED ENGINEERS
+            & MECHANICS
+        </h2>
+        <p class="mt-3 text-center">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+        <div class="row mt-4">
+            <div class="col-lg-4 mt-lg-2 mt-5">
+                <div class="about__item">
+                    <div class="about-icon">
+                        icon
+                    </div>
+                    <div class="box-title mt-2">
+                        INTERNATIONAL STANDARDS
+                    </div>
+                    <p class="about__desc mt-2">
+                        There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.
+                    </p>
+                    <button class="footer__subscribe-btn">read more</button>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-lg-2 mt-5">
+                <div class="about__item">
+                    <div class="about-icon">
+                        icon
+                    </div>
+                    <div class="box-title mt-2">
+                        INTERNATIONAL STANDARDS
+                    </div>
+                    <p class="about__desc mt-2">
+                        There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.
+                    </p>
+                    <button class="footer__subscribe-btn">read more</button>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-lg-2 mt-5">
+                <div class="about__item">
+                    <div class="about-icon">
+                        icon
+                    </div>
+                    <div class="box-title mt-2">
+                        INTERNATIONAL STANDARDS
+                    </div>
+                    <p class="about__desc mt-2">
+                        There are many variations of passag es of Lorem Ipsum available, but the majority have suffered.
+                    </p>
+                    <button class="footer__subscribe-btn">read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5">
+                <h5>
+                    <span class="text-red">
+                        OUR SERVICES
+                    </span>
+                </h5>
+                <h2 class="text-uppercase">
+                    WE PROVIDE BEST SERVICES
+                </h2>
+                <div class="services__container row">
+                    <div class="col-lg-4 mt-1">
+                        <div class="services__item active">
+                            <div class="services__icon">icon</div>
+                            <div class="services__title">
+                                Oil change
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-1">
+                        <div class="services__item">
+                            <div class="services__icon">icon</div>
+                            <div class="services__title">
+                                Oil change
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-1">
+                        <div class="services__item">
+                            <div class="services__icon">icon</div>
+                            <div class="services__title">
+                                Oil change
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-1">
+                        <div class="services__item">
+                            <div class="services__icon">icon</div>
+                            <div class="services__title">
+                                Oil change
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="services__content pt-5">
+                    <div class="services__thumbnail">
+                        <img src="img/thum5.jpg" alt="services__thumbnail-image" class="services__thumbnail-image">
+                    </div>
+                    <div class="services__title mt-3">
+                        BREAK REPAIR
+                    </div>
+                    <p class="mt-3">
+                        It is a long established fatct that a reader will be distracted by the readable contentof a page
+                        or
+                        randomised words
+                    </p>
+                    <button class="footer__subscribe-btn">read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reasons  pt-5 pb-5">
+    <div class="reasons__overlay"></div>
+    <div class="container">
+        <div class="reasons__content">
+            <h5 class="text-center"><span class="text-red text-uppercase">why choose us</span></h5>
+            <h2 class="text-uppercase text-center">why choose us</h2>
+            <p class="mt-2 text-center">There are many variations of passages of Lorem Ipsum available, but the majority
+                have suffered alteration in
+                some form, by injected humour, or randomised words which don't look even slightly believable.
+
+            </p>
+            <div class="row mt-5">
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase selected">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="reasons__item text-center text-uppercase">
+                        <div class="reasons__icon">icon</div>
+                        <div class="mt-3">we provided</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="reasons__main p-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="reasons__title mt-3">
+                            LONG TERM WARRANTIES AND COMPETITIVE PRICES WE REPAIR ANYTHING FROM HARDWARE.
+                        </div>
+                        <p class="mt-3">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered
+                            alteration in some form, by injected humour, or randomised words.
+                        </p>
+                        <ul class="reasons__list mt-3">
+                            <li class="reasons__list-item mt-2">Our Technicians are highly qualified</li>
+                            <li class="reasons__list-item mt-2">We supply the after market</li>
+                            <li class="reasons__list-item mt-2">Our Technicians are highly qualified</li>
+                            <li class="reasons__list-item mt-2">We supply the after market</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="reasons__img">
+                            <img src="img/bg-2.jpg" alt="reason__img-item" class="reasons__img-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="offer">
+    <div class="offer__overlay">
+    </div>
+    <div class="container">
+        <div class="row pt-md-5 pb-md-5 pt-2 pb-2">
+            <div class="col-md-6">
+                <div class="offer__left-content">
+                    <div class="mt-3">Our Latest Specials</div>
+                    <h3 class="mt-3">
+                        ANY SERVICES OF @300 OR MORE
+                    </h3>
+                    <p class="mt-3">
+                        We value our client, that's why we want to give you this special discount in order for you to
+                        use it
+                        to make your car more safe and feel confident when on the road!
+                    </p>
+                    <a href="" class="d-inline-flex align-items-center blog-post__open-btn offer__btn mt-4">
+                        read more
+                        <svg class="blog-post__right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                             style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 d-md-flex align-items-md-center justify-content-md-center">
+                <div class="offer__right-content">
+                    <svg class="offer__scissors" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                         enable-background="new 0 0 70 70" height="512"
+                         viewBox="0 0 70 70" width="512">
+                        <path d="m49.7319336 61.1767578c1.0776367.784668 2.347168 1.1958008 3.6523438 1.1958008.3242188 0 .6508789-.0253906.9770508-.0766602 3.3901367-.5332031 5.7143555-3.7250977 5.1816406-7.1152344-.5332031-3.390625-3.7314453-5.715332-7.1152344-5.1816406-1.6401367.2578125-3.0830078 1.140625-4.0625 2.4858398s-1.3769531 2.9892578-1.1191406 4.6293945 1.140625 3.0830079 2.4858398 4.0625001zm3.0063476-9.2021484c.2211914-.034668.440918-.0517578.6582031-.0517578 2.0424805 0 3.84375 1.4892578 4.1708984 3.5683594.3613281 2.3007812-1.2158203 4.4667969-3.5166016 4.8291016-2.3027344.359375-4.4677734-1.2163086-4.8291016-3.5166016-.3618162-2.3012696 1.2158205-4.4672852 3.5166017-4.8291016z"/>
+                        <path d="m4.9091797 54.3115234c-1.0131836 6.4536133 3.4067383 12.5292969 9.8535156 13.5439453.6054688.0952148 1.2104492.1416016 1.8125.1416016 4.2026367 0 8.2006836-2.2661133 10.3383789-6.0214844l8.0840454-15.5198975 7.7924194 14.9471436.3193359.6147461c2.1176758 3.7158203 6.1098633 5.9741211 10.3105469 5.9741211.6020508 0 1.2089844-.0463867 1.8144531-.1416016 6.4487305-1.0141602 10.8701172-7.0859375 9.8564453-13.534668-1.0141602-6.4482422-7.0878906-10.8696289-13.5341797-9.8564453-2.1723633.3417969-4.1538086 1.2548828-5.8017578 2.6630859l-5.5424194-10.652832 12.4296265-23.8540039c1.6020508-3.0805664.7900391-6.8647461-1.9262695-8.9936523l-1.7666016-1.4013672c-.2333984-.1855469-.5395508-.2553711-.8300781-.1948242-.2919922.0625-.5410156.2519531-.6787109.5166016l-12.4388428 23.9117432-12.4425049-23.9151612c-.1381836-.2651367-.387207-.4545898-.6796875-.5166016-.2905273-.0610352-.5966797.0097656-.8305664.1958008l-1.7573242 1.3999023c-2.7265625 2.1298828-3.5415039 5.9125977-1.9375 8.9946289l12.4343262 23.8510742-5.545166 10.6635742c-1.6518555-1.4013672-3.6689453-2.3354492-5.8017578-2.6689453-6.4501954-1.0151366-12.5170899 3.4052735-13.5322266 9.8535157zm41.3071289-4.8642578c1.5102539-1.6264648 3.4643555-2.668457 5.6508789-3.0126953 5.3583984-.8398438 10.4047852 2.8325195 11.2480469 8.1914062.8422852 5.359375-2.8325195 10.4057617-8.1914062 11.2485352-4.0151367.6298828-8.0649414-1.3168945-10.0581055-4.8120117l-5.9800415-11.4718628 4.4866333-2.7144775 1.223877 2.352356c.1503906.2885742.4311523.4858398.753418.5297852.3193358.0400389.6450194-.0722657.8666991-.3110353zm2.4394531-44.9072265.8212891.6518555c1.9638672 1.5395508 2.5488281 4.2734375 1.3911133 6.5l-11.7822876 22.6119994-2.9569702-5.6834106zm-28.1254883.6479492.8149414-.6494141 21.1022339 40.5599365-4.4879761 2.715271-18.831543-36.1257935c-1.1591796-2.2260741-.5722655-4.9575194 1.4023438-6.4999999zm13.3392334 39.1037597-1.8345337 3.5195923-4.4840088-2.7128906 3.3656006-6.4709473zm-15.7376709 2.1418458c2.1782227.3408203 4.1328125 1.3833008 5.6518555 3.0151367.2211914.2373047.5405273.3496094.8662109.3095703.3217773-.0439453.6020508-.2407227.7524414-.5288086l1.223938-2.3532715 4.4824829 2.7119751-5.6820068 10.901062-.2729492.5366211c-2.0126953 3.534668-6.0585938 5.4848633-10.0805664 4.8540039-5.3574219-.8432617-9.0307617-5.8935547-8.1884766-11.2578125.8432617-5.3579101 5.8867188-9.0336914 11.2470703-8.1884765z"/>
+                        <path d="m15.637207 62.2958984c.3261719.0512695.6499023.0761719.9702148.0761719 3.0087891 0 5.6630859-2.1938477 6.1450195-5.2578125.5332031-3.390625-1.7915039-6.5825195-5.1816406-7.1152344-3.3925781-.5351562-6.5830078 1.7915039-7.1152344 5.1816406-.5336913 3.3896485 1.7910157 6.5820313 5.1816407 7.1152344zm-3.2060547-6.8046875c.3618164-2.3007812 2.5288086-3.8774414 4.8291016-3.5166016 2.3007812.3618164 3.878418 2.527832 3.5166016 4.8291016-.3618164 2.3007812-2.5263672 3.8793945-4.8291016 3.5166016-2.3007812-.3623047-3.878418-2.5283203-3.5166016-4.8291016z"/>
+                        <path d="m35.7099609 35.8598633c-.3803711-.3798828-1.050293-.3798828-1.4199219 0-.1801757.1801758-.290039.4399414-.290039.7001953 0 .2695312.1098633.5195312.2900391.7099609.1899414.1899414.449707.2900391.7099609.2900391.2597656 0 .5200195-.1000977.7099609-.2900391.0400391-.050293.0800781-.1000977.1196289-.1503906.0400391-.0595703.0703125-.1196289.0903321-.1796875.0297852-.0600586.0498047-.1201172.0600586-.1801758.0097656-.0698242.0200195-.1298828.0200195-.199707 0-.2602539-.1103516-.5200195-.2900391-.7001953z"/>
+                    </svg>
+                    <div class="offer__coupon">
+                        <div>Coupons From</div>
+                        <div><span class="offer__percent">35%</span> off repairs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news">
+    <div class="container">
+        <div class="row pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="col-lg-6 mt-2">
+                <div class="news__item d-flex align-items-center">
+                    <div class="news__thumbnail">
+                        <img src="img/bg-6.jpg" alt="news__thumbnail-img" class="news__thumbnail-img">
+                    </div>
+                    <div class="news__details">
+                        <div class="news__date">
+                            March 9, 2019
+                        </div>
+                        <div class="news__title mt-3">
+                            THE NUMBER OF ELECTRIC VEHICLES IN THE UK HAS DOUBLED
+                        </div>
+                        <a href="" class="d-inline-flex align-items-center blog-post__open-btn mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-2">
+                <div class="news__item d-flex align-items-center">
+                    <div class="news__thumbnail">
+                        <img src="img/bg-6.jpg" alt="news__thumbnail-img" class="news__thumbnail-img">
+                    </div>
+                    <div class="news__details">
+                        <div class="news__date">
+                            March 9, 2019
+                        </div>
+                        <div class="news__title mt-3">
+                            THE NUMBER OF ELECTRIC VEHICLES IN THE UK HAS DOUBLED
+                        </div>
+                        <a href="" class="d-inline-flex align-items-center blog-post__open-btn mt-4">
+                            read more
+                            <svg class="blog-post__right-arrow" version="1.1" id="Capa_1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                 xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+	</g>
+</g>
+
+</svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<main class="pt-lg-5 pb-lg-5 pt-3 pb-3"></main>-->
+<footer class="footer pt-4 pb-4">
+    <div class="footer__overlay"></div>
+    <div class="container footer__content">
+        <div class="row footer__cols pb-3">
+            <div class="col-lg-4">
+                <div class="footer__col-header">
+                    get in touch
+                </div>
+                <div class="footer__col-item">
+                    92 Princess Road, parkvenue,Greater London, NW18JR, United Kingdom
+                </div>
+                <div class="footer__col-item">
+                    carservxdemo@gmail.com
+                </div>
+                <div class="footer__col-item">
+                    carservxdemo@gmail.com
+                </div>
+                <div class="footer__col-item">
+                    (+0091) 912-3456-073
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer__col-header">
+                    links
+                </div>
+                <div class="footer__col-item">
+                    <a href="" class="footer__link">
+                        About
+                    </a>
+                </div>
+                <div class="footer__col-item">
+                    <a href="" class="footer__link">
+                        Gallery
+                    </a>
+                </div>
+                <div class="footer__col-item">
+                    <a href="" class="footer__link">
+                        Blog
+                    </a>
+                </div>
+                <div class="footer__col-item">
+                    <a href="" class="footer__link">
+                        Faq
+                    </a>
+                </div>
+                <div class="footer__col-item">
+                    <a href="" class="footer__link">
+                        Contact us
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="footer__col-header">
+                    SIGNUP TO NEWSLETTER
+                </div>
+                <div class="footer__col-item">
+                    Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to
+                    our newsletter.
+                </div>
+                <form class="footer__subscribe-form">
+                    <input placeholder="ENTER YOUR EMAIL" type="text" class="footer__subscribe-input">
+                    <button class="footer__subscribe-btn">submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row pt-lg-5 pt-3">
+            <div class="col lg-8 col-12">
+                <div class="footer__copyright">
+                    © 2019 YOUR COMPANY. ALL RIGHTS RESERVED. DESIGNED BY <span class="text-red">THEWEBMAX.</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="footer__social d-flex align-items-center">
+                    <a href="" class="footer__social-item">
+                        <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a> /
+                    <a href="" class="footer__social-item">
+                        <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                             viewBox="0 0 24 24"><title>Twitter
+                            icon</title>
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a> /
+                    <a href="" class="footer__social-item">
+                        <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" role="img"
+                             viewBox="0 0 24 24"><title>Instagram
+                            icon</title>
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
